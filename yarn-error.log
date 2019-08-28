@@ -1,0 +1,40 @@
+Arguments: 
+  /snap/node/2310/bin/node /snap/node/2310/bin/yarn.js config get registry
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  8.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, write
+      at Object.fs.writeSync (fs.js:735:20)
+      at SyncWriteStream._write (internal/fs.js:78:6)
+      at doWrite (_stream_writable.js:396:12)
+      at writeOrBuffer (_stream_writable.js:382:5)
+      at SyncWriteStream.Writable.write (_stream_writable.js:290:11)
+      at ConsoleReporter._log (/snap/node/2310/lib/cli.js:96002:17)
+      at ConsoleReporter.log (/snap/node/2310/lib/cli.js:95990:10)
+      at get (/snap/node/2310/lib/cli.js:86883:14)
+      at Object.<anonymous> (/snap/node/2310/lib/cli.js:25855:25)
+      at Generator.next (<anonymous>)
+
+npm manifest: 
+  {
+    "name": "news-app",
+    "version": "0.1.0",
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
